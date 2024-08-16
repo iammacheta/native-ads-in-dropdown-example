@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Native ads example</title>
+  <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+  <script>
+    window.googletag = window.googletag || { cmd: [] };
+
+    googletag.cmd.push(() => {
+      // Define ad slot for web-tft-comp-dropdown-native.
+      googletag
+        .defineSlot('/21974715207/web-tft-comp-dropdown-native', ['fluid'], 'div-gpt-ad-1713969330814-1')
+        .addService(googletag.pubads());
+
+      // Enable the PubAdsService.
+      googletag.enableServices();
+    });
+  </script>
+
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+  <div class="root">
+    <div class="content">
+      <header>
+        <h1>/21974715207/web-tft-comp-dropdown-native</h1>
+      </header>
+
+      <div class="native-ad" id="div-gpt-ad-1713969330814-1"></div>
+      <script>
+        googletag.cmd.push(() => {
+          // Request and render an ad for the "div-gpt-ad-1713969330814-1" slot.
+          googletag.display("div-gpt-ad-1713969330814-1");
+        });
+      </script>
+    </div>
+  </div>
+</body>
+
+</html>
